@@ -1,23 +1,8 @@
-result = []
+import colorama
+import requests
 
-def divider(a, b):
-    if a < b:
-        raise ValueError
-    if b == 0:
-        raise ValueError
-    if b > 100:
-        raise IndexError
-    return a / b
-
-data = (10, 2, 2, 5, 123, 4, 18, 0, 15, 8, 4)
-
-for key in data:
-    try:
-        res = divider(key, data[key])
-        result.append(res)
-    except ValueError :
-        print(f"ValueError")
-    except IndexError :
-        print(f"IndexError")
-
-print(result)
+from colorama import Fore, Back, Style
+print(Fore.RED + 'сігма')
+print(Back.BLACK + 'лол')
+print(Style.DIM + 'скібідідоп')
+print(Style.RESET_ALL)
